@@ -1,5 +1,7 @@
 """
 Main entrypoint for GDPR-compliant RAG Q&A system.
+End-to-end RAG orchestration with grounded generation.
+
 """
 
 from rag_pipeline import retriever
