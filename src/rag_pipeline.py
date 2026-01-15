@@ -4,13 +4,14 @@ Retrieval and generation pipeline for enterprise RAG system.
 Responsibilities:
 - Load persisted vector database
 - Perform similarity-based retrieval
-- Assemble contextual input
-- Enforce grounded generation
-- Log retrieval activity for auditability
 
+Design focus:
 This pipeline intentionally prioritises transparency and governance
-over response creativity.
+over response creativity. 
+Retrieval using persisted index.
+
 """
+
 from langchain.vectorstores import Chroma
 from langchain_ibm import WatsonxEmbeddings
 from ibm_watsonx_ai.metanames import EmbedTextParamsMetaNames
